@@ -1,0 +1,27 @@
+/* รีเซ็ต margin */
+body { margin: 0; }
+
+/* จัดการตาราง */
+table { 
+  border-collapse: collapse; 
+  width: 100vw; 
+  height: 100vh; 
+}
+
+/* จัดการเซลล์ */
+td { 
+  font-size: xx-large; 
+  width: 50%; 
+  text-align: center; 
+}
+
+/* สีพื้นหลังของแต่ละฝั่ง */
+.left { background-color: rgb(109, 186, 109); }
+.right { background-color: #e8816f; }
+
+/* 📌 Responsive: จอเล็กลง ให้ตารางเรียงเป็นแนวตั้ง */
+@media (max-width: 600px) {
+  table { height: auto; }
+  tr { display: flex; flex-direction: column; }
+  td { width: 100%; height: 50vh; }
+}
