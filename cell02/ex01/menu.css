@@ -1,0 +1,17 @@
+body{
+    background-color: pink;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 40px;
+}
+.menu{
+    margin-top: 100px;
+}
+select{
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
