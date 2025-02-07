@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="42_logo.png" alt="logo">
+        </div>
+        <div class="brand">
+            <a href="index.html">Rush</a>
+        </div>
+        <button class="menu-btn" id="menu-btn">☰</button>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="jsongsir.html">jsongsir</a>
+            <a href="rusk_project.html">prakpan</a>
+        </div>
+    </nav>
+    <h1 class="head-messege">Welcome</h1>
+    <br>
+    <p class="head-hacker">Hacker</p>
+
+    <div class="button-container">
+        <a href="jsongsir.html" class="custom-button">jsongsir</a>
+        <a href="rusk_project.html" class="custom-button">prakpan</a>
+    </div>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        });
+    </script>
+    <video autoplay muted loop id="bg-video">
+        <source src="bg_video.mp4" type="video/mp4">
+    </video>
+
+
+</body>
+</html>

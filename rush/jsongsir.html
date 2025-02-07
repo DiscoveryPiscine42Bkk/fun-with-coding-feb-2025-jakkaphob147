@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jsongsir</title>
+    <link rel="stylesheet" href="jsongsir.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="42_logo.png" alt="logo">
+        </div>
+        <div class="brand">
+            <a href="index.html">Rush</a>
+        </div>
+        <button class="menu-btn" id="menu-btn">☰</button>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="jsongsir.html">jsongsir</a>
+            <a href="rusk_project.html">prakpan</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="main-pic">
+            <img src="C_photo.jpg" alt="C_photo">
+        </div>
+        <div class="main-info">
+            <div class="hi-name">
+                <h1 class="hi">Hi It's</h1>
+                <h1 class="name">jsongsir</h1>
+            </div>
+            <div class="im-hacker">
+                <h1 class="im">I'm a</h1>
+                <h1 class="hacker" id="hacker-title">Hacker</h1>
+            </div>
+            <div class="info-lorem">
+                <div class="info" id="lorem-div">I am a motivated and hardworking person who loves to learn,<br> solve problems, and improve myself. I believe good project management<br> helps get things done well, but I also enjoy finding creative solutions to<br> unexpected challenges. With a positive attitude and a focus on doing my best,<br> I aim to contribute meaningfully and grow with my team.</div>
+            </div>
+            <div class="btn-change-content">
+                <button id="change-content-btn">Change Content</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'flex') {    
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        });
+
+        var contents = [
+            { title: "Hacker", text: "I am a motivated and hardworking person who loves to learn,<br> solve problems, and improve myself. I believe good project management<br> helps get things done well, but I also enjoy finding creative solutions to<br> unexpected challenges. With a positive attitude and a focus on doing my best,<br> I aim to contribute meaningfully and grow with my team."},
+            { title: "About", text: "Full name : Jackkaphob Songsiri<br>Nickname : C<br>Nationality : Thai<br>Marital Status : Single<br>Religion : Islam<br>Gender : Male<br>Military status : R.O.T.C." },
+            { title: "Experience", text: "Cybersecurity in Railway system ALSTOM (29 May–31 Oct 2024) Apprentice<br>Personal  IPS --------------------------------------------------------------------------- Junior<br>Programming to simulate a train signaling system in 5G ------------------- Junior<br>Programming to modulate in various types ------------------------------------ Junior<br>Programming to simulate an online shopping app ---------------------- Freshman" },
+            { title: "Skill", text: "Python<hr>Experienced in writing scripts for automation,<br>data analysis, and cybersecurity. Familiar with libraries<br>such as NumPy, Pandas, Matplotlib, Tkinter and Scikit-learn.<br><br>Network<hr> Knowledge of network model and<br>protocols, network security, and packet analysis." },
+            { title: "Contact", text: "📞<br>+6680 020 7652<br>✉️<br>jakkaphobsongsiri@gmail.com<br><button class='custom-button'><a href='https://maps.app.goo.gl/Q6untbCqkhQNjcyA9' target='_blank' class='custom-button'>Map</a></button><br>60/18, On Nut 55/1 Alley,<br> On Nut Road, Prawet District,<br> Prawet District, Bangkok, 10250" }
+        ];
+        var currentIndex = 0;
+
+        document.getElementById('change-content-btn').addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % contents.length;
+            var content = contents[currentIndex];
+            document.getElementById('lorem-div').innerHTML = content.text;
+            document.getElementById('hacker-title').innerHTML = content.title;
+        });
+    </script>
+    <video autoplay muted loop id="bg-video">
+        <source src="fire.mp4" type="video/mp4">
+    </video>
+    </body>
+</html>
