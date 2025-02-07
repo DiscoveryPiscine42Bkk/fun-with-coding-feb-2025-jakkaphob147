@@ -109,7 +109,7 @@ nav {
     transform: scale(1.15);
 }
 .head-messege {
-    position: absolute; 
+    position: absolute;     
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);

@@ -105,15 +105,15 @@ nav {
     justify-content: center;
 }
 
-.main-pic img {
-    border-radius: 50%;
-}
+/* .main-pic img { */
+    /* border-radius: 50%; */
+/* } */
 
 .main-info {
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    text-align: right;
+    text-align: center;
     align-items: left;
     justify-content: center;
     display: flex;
@@ -147,13 +147,16 @@ nav {
     margin: 3px;
     color: rgb(223, 97, 13);
     font-size: 2.5rem;
-    animation: colorChange 5s infinite;
+    animation: colorChange2 5s infinite;
 }
 
-.info-lorem p {
+.info-lorem .info {
     display: inline-block;
-    margin: 3px;
+    margin: 10px;
     color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    text-align: left;
 }
 
 @keyframes colorChange {
@@ -162,6 +165,14 @@ nav {
     50% { color: rgb(255, 165, 0); }
     75% { color: rgb(255, 69, 0); }
     100% { color: rgb(223, 97, 13); }
+}
+
+@keyframes colorChange2 {
+    0% { color: rgb(223, 97, 13); }
+    25% { color: rgb(223, 97, 13); }
+    50% { color: rgb(255, 140, 0); }
+    75% { color: rgb(255, 165, 0); }
+    100% { color: rgb(255, 69, 0); } 
 }
 
 /* สำหรับหน้าจอขนาดกลาง */
@@ -206,4 +217,18 @@ nav {
     .im, .hacker {
         font-size: 1.5rem;
     }
+}
+
+.btn-change-content button{
+    background-color: rgb(223, 97, 13, 0.6) !important;
+    color: whitesmoke !important;
+    padding: 5px 10px !important;
+    border-radius: 0px !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
+    transition: 0.3s !important;
+}
+.btn-change-content button:hover {
+    color: rgb(0, 0, 0) !important;
+    background-color: rgb(255, 69, 0) !important;
 }
