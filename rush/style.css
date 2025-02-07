@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* ทำให้วิดีโอครอบคลุมพื้นที่ทั้งหมด */
+}
+nav {
+    background-color:  rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    height: auto;
+    width: 40px; /* กำหนดความกว้างของรูปภาพ */
+    margin-right: 10px;
+    
+}
+.brand {
+    text-align: left;
+    font-size: 1.85rem;
+    font-weight: bold;
+    color: #000000;
+    margin-right: auto;
+}
+.brand a {
+    text-decoration: none;
+    color: #000000;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+}
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+.menu a:hover {
+    color: rgb(0, 0, 0);
+}
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    
+}
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+    .menu a {
+        display: block;
+        padding: 10px;
+    }
+    .menu-btn {
+        display: block;
+    }
+}
+.button-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #252323;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.custom-button:hover {
+    background-color: #000000;
+    transform: scale(1.15);
+}
+.head-messege {
+    position: absolute;     
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem; /* ปรับขนาดตัวอักษร */
+    color: white; /* สีของข้อความ */
+    text-align: center;
+    font-weight: bold;
+}
+.head-hacker {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem; /* ปรับขนาดตัวอักษร */
+    color: white; /* สีของข้อความ */
+    text-align: center;
+    font-weight: bold;
+}
