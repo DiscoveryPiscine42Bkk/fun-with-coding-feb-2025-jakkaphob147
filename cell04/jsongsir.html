@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="jsongsir.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="42_logo.png" alt="logo">
+        </div>
+        <div class="brand">My Resume</div>
+        <button class="menu-btn" id="menu-btn">☰</button>
+        <div class="menu" id="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Resume</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div class="resume-container">
+        <h1 class="head-messege">John Doe</h1>
+        <p class="head-hacker">Software Engineer</p>
+
+        <section class="resume-section">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </section>
+
+        <section class="resume-section">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <h3>Company A</h3>
+                    <p>Software Engineer (2020 - Present)</p>
+                    <p>Responsibilities and achievements...</p>
+                </li>
+                <li>
+                    <h3>Company B</h3>
+                    <p>Junior Developer (2018 - 2020)</p>
+                    <p>Responsibilities and achievements...</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="resume-section">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>University X</h3>
+                    <p>Bachelor of Science in Computer Science (2014 - 2018)</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="resume-section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: JavaScript, Python, Java</li>
+                <li>Frameworks: React, Node.js, Django</li>
+                <li>Tools: Git, Docker, Jenkins</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        });
+    </script>
+    <video autoplay muted loop id="bg-video">
+        <source src="bg_video.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
