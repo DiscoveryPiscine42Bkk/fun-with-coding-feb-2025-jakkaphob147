@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style (1).css">
+    <title>Resume</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="42_logo.png" alt="logo">
+        </div>
+        <div class="brand">
+            <a href="index.html">Rush</a>
+        </div>
+        <button class="menu-btn" id="menu-btn">☰</button>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="jsongsir.html">jsongsir</a>
+            <a href="rusk_project.html">prakpan</a>
+        </div>
+    </nav>
+    
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-container">
+            <div class="home-left">
+                <img src="pro.jpg" alt="Profile Picture">
+            </div>
+            <div class="home-right">
+                <h1>Panuwat Rakpan</h1>
+                <h2>Telecommunications and Network Engineer</h2>
+
+                <!-- Personal Information -->
+                <table>
+                    <tr>
+                        <td><strong>Date of Birth:</strong></td>
+                        <td>17 June 2003</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Height:</strong></td>
+                        <td>173 cm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Weight:</strong></td>
+                        <td>73 kg</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nationality:</strong></td>
+                        <td>Thai</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Marital Status:</strong></td>
+                        <td>Single</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Military Status:</strong></td>
+                        <td>Completed Reserved Officers Training Corps Course</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>
+                As a Telecommunications and Network Engineering student at King Mongkut's Institute of Technology Ladkrabang, 
+                I am eager to apply my knowledge and skills in real-world scenarios. 
+                With a strong educational foundation and a quick grasp of concepts, 
+                I work well in teams and am excited to develop my problem-solving abilities through hands-on experience.
+            </p>
+        </div>
+        <div class="Skills">
+            <h2>My Skills</h2>
+            <p><strong>Python</strong></p>
+            <p><strong>Wireshark</strong></p>
+            <p><strong>Arduino IDE</strong></p>
+            <p><strong>Proteus</strong></p>
+            <p><strong>Microsoft office</strong></p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="experience-container">
+            <h2>Experience</h2>
+
+            <h3>Intern - IPRAN Technical Engineer at ZTE (Thailand) Co., Ltd.</h3>
+            <p><strong>May 2024 - October 2024</strong></p>
+            <ul>
+                <li>Supported network operations through performance monitoring and status reporting.</li>
+                <li>Developed network automation system.</li>
+            </ul>
+
+            <h4>LLDP-Based Network Topology Mapping</h4>
+            <p>
+                Developed a network topology mapping project that leverages LLDP to automatically detect and map connections between multi-vendor network devices.
+                The system uses Python with Paramiko for SSH-based data extraction and an algorithm for structured topology mapping.
+            </p>
+
+            <h3>Part-time at Hyperlink Communication Co., Ltd.</h3>
+            <ul>
+                <li>Created Ethernet cables.</li>
+                <li>Performed quality testing and troubleshooting using a Fluke Networks DSX-600 CableAnalyzer.</li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects-container">
+            <h2>Projects</h2>
+
+            <h3>Personal IPS</h3>
+            <p>
+                Developed an internet intrusion detection system leveraging EWMA principles alongside Windows Firewall 
+                to detect and mitigate DoS attacks. Entirely implemented using Python.
+            </p>
+
+            <h3>5G-Based Train Control System</h3>
+            <p>
+                Simulated CBTC (Communication-Based Train Control) using 5G technology.
+                This project provided insights into replacing the fixed block system with CBTC and analyzed the 5G frame structure.
+            </p>
+
+            <h3>Electronics Projects</h3>
+            <ul>
+                <li>Light Dimmer Circuit</li>
+                <li>Phase Locked Loop</li>
+                <li>FM Radio Circuit</li>
+            </ul>
+            <p>
+                Designed and built circuits, which improved my knowledge of electronic devices, troubleshooting, and project planning.
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <ul>
+            <li><strong>Phone:</strong> <a href="tel:+66989623193">098-962-3193</a></li>
+            <li><strong>Facebook:</strong> <a href="https://www.facebook.com/parnuwat.rakpan/" target="_blank">Panuwat Rakpan</a></li>
+            <li><strong>Email:</strong> <a href="mailto:rakpanpanuwat@gmail.com">rakpanpanuwat@gmail.com</a></li>
+            <li><strong>Address:</strong> 56/8 Moo.6 Tha Kham, Bang Pakong, Chachoengsao, 24130</li>
+        </ul>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function() {
+            $('#menu-btn').click(function() {
+                $('#menu').toggle();
+            });
+        });
+    </script>
+
+</body>
+</html>
