@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function calculate() {
+            let left = document.getElementById("left").value;
+            let right = document.getElementById("right").value;
+            let operator = document.getElementById("operator").value;
+            
+            if (!/^[0-9]+$/.test(left) || !/^[0-9]+$/.test(right)) {
+                alert("Error :(");
+                return;
+            }
+            
+            left = parseInt(left, 10);
+            right = parseInt(right, 10);
+            let result;
+            
+            switch (operator) {
+                case '+': result = left + right; break;
+                case '-': result = left - right; break;
+                case '*': result = left * right; break;
+                case '/': 
+                case '%': 
+                    if (right === 0) {
+                        alert("It's over 9000!");
+                        console.log("It's over 9000!");
+                        return;
+                    }
+                    result = operator === '/' ? left / right : left % right;
+                    break;
+                default:
+                    alert("Error :(");
+                    return;
+            }
+            
+            alert("Result: " + result);
+            console.log("Result:", result);
+        }
+        
+        setInterval(() => {
+            alert("Please, use me...");
+        }, 30000);
+    </script>
+</head>
+<body>
+    <input type="text" id="left" placeholder="Left Operand">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="text" id="right" placeholder="Right Operand">
+    <input type="submit" value="Try me!" onclick="calculate()">
+</body>
+</html>
