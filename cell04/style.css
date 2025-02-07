@@ -37,6 +37,10 @@ nav {
     color: #000000;
     margin-right: auto;
 }
+.brand a {
+    text-decoration: none;
+    color: #000000;
+}
 .menu {
     display: flex;
     gap: 20px;
@@ -97,14 +101,15 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
 }
 
 .custom-button:hover {
-    background-color: #0d0e0f;
+    background-color: #000000;
     transform: scale(1.15);
 }
 .head-messege {
-    position: absolute;
+    position: absolute; 
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
