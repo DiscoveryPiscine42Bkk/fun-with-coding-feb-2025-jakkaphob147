@@ -114,7 +114,7 @@ nav {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    align-items: left;
+    align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -156,7 +156,7 @@ nav {
     color: whitesmoke;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 @keyframes colorChange {
